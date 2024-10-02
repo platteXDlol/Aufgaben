@@ -16,24 +16,14 @@
             for (int i = zahl1; i <= zahl2; i++)
             {
               
-                if (i % Quersumme(i) != 0)
+                if (i % Quersumme(i) == 0)
                 {
                     int g = i / Quersumme(i);
                     Console.WriteLine($"{i}, {Quersumme(i)}, {g}");
                 }
             }
-
-     
-
-
-
-
-
-
-
-
-
         }
+        
 
         static int Quersumme(int zahl)
         {
