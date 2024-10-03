@@ -11,20 +11,23 @@ namespace Diagonale_Linie_zeichnen
         static void Main(string[] args)
         {
             Console.WriteLine("Wie lang soll die Linie sein?");
+            int lineLength = int.Parse(Console.ReadLine());
+            Console.WriteLine();
 
-            while (true)
+            for (int i = 1; i <= lineLength; i++)
             {
-                int lengthOfLine = 0;
-                if (int.TryParse(Console.ReadLine(), out lengthOfLine))
+                for (int j = 1; j <= lineLength; j++)
                 {
-                    DrawLine(lengthOfLine);
-                    break;
+                    if (i == j)
+                    {
+                        Console.Write(" ");
+                    }
+                    else
+                    {
+                        Console.Write("*");
+                    }
                 }
-
-                else
-                {
-                    Console.WriteLine("Ungültige Eingabe. Ganzzahl erwartet.");
-                }
+                Console.WriteLine();
             }
 
             Console.ReadKey();
