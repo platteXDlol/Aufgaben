@@ -8,7 +8,7 @@
             while (true)
             {
 
-                Console.WriteLine("Ihr Geburtsdatum (dd.mm.jjjj");
+                Console.WriteLine("Ihr Geburtsdatum (dd.mm.jjjj)");
                 string input = Convert.ToString(Console.ReadLine());
 
                 DateTime birthday;
@@ -33,7 +33,8 @@
                 }
                 else
                 {
-                    Console.WriteLine("Eingabefehler. Bitte geben Sie eine Ganzzahl ein.");
+                    Console.WriteLine("Eingabefehler. Bitte geben Sie eine gültiges Datum ein.");
+                    Console.WriteLine();
                 }
 
             }

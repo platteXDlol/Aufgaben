@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.Write("Breite des Stammes? ");
-            int stammBreite = Convert.ToInt32(Console.ReadLine());
+            int stammBreite = int.Parse(Console.ReadLine());
             Console.Write("Höhe des Stammes? ");
             int stammHoehe = Convert.ToInt32(Console.ReadLine());
             Console.Write("Höhe der Krone? ");
