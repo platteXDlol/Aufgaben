@@ -21,10 +21,10 @@ namespace Aufgabe_19
 
 
               
-                Console.WriteLine(GetFirstZahl(input));
-                Console.WriteLine(GetOperator(input));
-                Console.WriteLine(GetSecondZahl(input));
-                Console.WriteLine(Calculate(input));
+                GetFirstZahl(input);
+                GetOperator(input);
+                GetSecondZahl(input);
+                Console.WriteLine($"ihr reslutat ist: {Calculate(input)}");
 
                 
 
