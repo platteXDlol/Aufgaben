@@ -63,7 +63,7 @@ namespace Aufgabe_19
                 int result = GetFirstZahl(i) + GetSecondZahl(i);
                 return result;
             }
-            else if (GetOperator(i) == '+')
+            else if (GetOperator(i) == '-')
             {
                 int result = GetFirstZahl(i) - GetSecondZahl(i);
                 return result;
